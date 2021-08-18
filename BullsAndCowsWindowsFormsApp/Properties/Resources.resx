@@ -121,4 +121,10 @@
   <data name="bulls_and_cows" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bulls_and_cows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bull_and_cow_in_love_by_thehorriblepirate_d5tkpum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bull_and_cow_in_love_by_thehorriblepirate-d5tkpum.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maxresdefault_live" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxresdefault_live.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

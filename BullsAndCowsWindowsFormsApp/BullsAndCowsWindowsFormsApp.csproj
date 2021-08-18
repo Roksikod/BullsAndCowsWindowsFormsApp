@@ -83,5 +83,11 @@
   <ItemGroup>
     <None Include="Resources\bulls_and_cows.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault_live.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bull_and_cow_in_love_by_thehorriblepirate-d5tkpum.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
