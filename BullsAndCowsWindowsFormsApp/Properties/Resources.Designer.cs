@@ -63,9 +63,29 @@ namespace BullsAndCowsWindowsFormsApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bull_and_cow_in_love_by_thehorriblepirate_d5tkpum {
+            get {
+                object obj = ResourceManager.GetObject("bull_and_cow_in_love_by_thehorriblepirate_d5tkpum", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bulls_and_cows {
             get {
                 object obj = ResourceManager.GetObject("bulls_and_cows", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maxresdefault_live {
+            get {
+                object obj = ResourceManager.GetObject("maxresdefault_live", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
