@@ -58,7 +58,6 @@ namespace BullsAndCowsWindowsFormsApp
             this.puzzledWordLabel.TabIndex = 0;
             this.puzzledWordLabel.Text = "Number";
             this.puzzledWordLabel.VisibleChanged += new System.EventHandler(this.MainForm_Load);
-            this.puzzledWordLabel.Click += new System.EventHandler(this.puzzledWordLabel_Click);
             // 
             // cowsCountLabel
             // 
@@ -100,6 +99,7 @@ namespace BullsAndCowsWindowsFormsApp
             this.button1.Text = "ОК";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            
             // 
             // historyDataGridView
             // 

@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BullsAndCowsWindowsFormsApp
@@ -15,6 +9,7 @@ namespace BullsAndCowsWindowsFormsApp
         string puzzledWord = "";
         const int wordLength = 4;
         int stepCount = 0;
+
         public MainForm()
         {
             InitializeComponent();
@@ -32,7 +27,7 @@ namespace BullsAndCowsWindowsFormsApp
                 puzzledWord += digits[digitIndex].ToString();
                 digits.RemoveAt(digitIndex);
             }
-            //puzzledWordLabel.Text = puzzledWord;
+            puzzledWordLabel.Text = puzzledWord;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,19 +51,18 @@ namespace BullsAndCowsWindowsFormsApp
 
             if (bullsCount == wordLength)
             {
+                puzzledWordLabel.Text = puzzledWord;
                 if (stepCount <= 20)
                 {
-                    MessageBox.Show("Good job! You won in " + stepCount + " steps.");                    
+                    MessageBox.Show("Good job! You won in " + stepCount + " steps.");
                     button1.Enabled = false;
                     userWordTextBox.Enabled = false;
-                    puzzledWordLabel.Text = puzzledWord;
                 }
                 else
                 {
-                    MessageBox.Show("Thank you for my win! You guessed my number in " + stepCount + " steps.");                    
+                    MessageBox.Show("Thank you for my win! You guessed my number in " + stepCount + " steps.");
                     button1.Enabled = false;
                     userWordTextBox.Enabled = false;
-                    puzzledWordLabel.Text = puzzledWord;
                 }
             }
         }
@@ -144,18 +138,14 @@ namespace BullsAndCowsWindowsFormsApp
                 "Your hints: \n" +
                 "Bull - right digit and it is in its place. \n" +
                 "Cow - right digit, but not in this place. \n" +
-                "Zero could be the first.\n" +
+                "Zero can be the first.\n" +
                 "Have a fun!");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Application.Restart();
-        }
-
-        private void puzzledWordLabel_Click(object sender, EventArgs e)
-        {
-
-        }
+            if (MessageBox.Show("Do you want to restart?", "Exit", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                Application.Restart();
+        }        
     }
 }
